@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_city_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ddd"
+            android:completionThreshold="1" />
+
+        <Spinner
+            android:id="@+id/spn_district"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_drugstore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Nhà thuốc" />
+
+        <Button
+            android:id="@+id/btn_hospital"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Bệnh Viện" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:background="#ff5252"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:hint="Search" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_type_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
